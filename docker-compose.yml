@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  shop-telegram-bot:
+    image: w1png/shop-telegram-bot-1.0.2
+    environment:
+      - MAIN_ADMIN_ID=6522054669
+      - TELEGRAM_TOKEN=6866566554:AAHSShKT8hblHkX2tq8iD4hHgnMpCRDYvNo
+
+    volumes:
+      - ./D:/Bots tg/shop-telegram-bot-1.0.2:/app/data  # Измените на путь к папке, где у вас хранятся данные
+
+# Дополнительные сервисы, если нужны (например, база данных)
+# ...
+
+# Дополнительные настройки (например, сети, volumes и т.д.)
+# ...
